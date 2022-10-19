@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+  width: 100%;
+  height: 90vh; // I saw 1066px in design but I don't know whether to use it or not
+  background-size: cover;
+  background: url("/img/Layer.png") no-repeat center center;
+
+  h1 {
+    -webkit-text-stroke: 2px white;
+    font: normal normal normal 50px Arial;
+    color: transparent;
+    margin: 0;
+    text-align: center;
+    @media (min-width: 576px) { // On React js version used media-breakpoint-down(sm)
+      font-size: 45px;
+    }
+  }
+}
+
+.line {
+  width: 100%;
+  height: 13px;
+  & .row {
+    & div {
+      height: 13px;
+      &:nth-child(1) {
+        background: #ea2029;
+      }
+      &:nth-child(2) {
+        background: #f8ae41;
+      }
+      &:nth-child(3) {
+        background: #26a7e0;
+      }
+    }
+  }
+}
+
+.bg-custom {
+  background: #cccccc;
+}
